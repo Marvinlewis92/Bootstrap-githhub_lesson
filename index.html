@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Introduction</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1 class="text-primary text-center">Welcome to Bootstrap</h1>
+      <p class="lead text-center">
+        This page is now using Bootstrap’s grid system.
+      </p>
+
+      <div class="row">
+        <div class="col-12 col-md-4 bg-light p-4">
+          <h2>Column 1</h2>
+          <p>This section adjusts based on screen size.</p>
+        </div>
+        <div class="col-12 col-md-4 bg-secondary text-white p-4">
+          <h2>Column 2</h2>
+          <p>This section also adjusts based on screen size.</p>
+        </div>
+        <div class="col-12 col-md-4 bg-light p-4">
+          <h2>Column 3</h2>
+          <p>This section also adjusts based on screen size.</p>
+        </div>
+      </div>
+
+      <div class="container mt-5 text-center">
+        <h1 class="text-primary">Welcome to Bootstrap Components</h1>
+        <p class="lead">
+          Bootstrap provides ready-to-use UI elements like buttons, cards, and
+          navigation.
+        </p>
+
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-success">Success Button</button>
+        <button class="btn btn-danger">Danger Button</button>
+
+        <button class="btn btn-lg btn-warning">Large Button</button>
+        <button class="btn btn-sm btn-info">Small Button</button>
+        <button class="btn btn-outline-dark">Outlined Button</button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/350x200"
+              class="card-img-top"
+              alt="Sample Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card One</h5>
+              <p class="card-text">This is a simple Bootstrap card.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/350x200"
+              class="card-img-top"
+              alt="Sample Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Two</h5>
+              <p class="card-text">Cards are great for displaying content.</p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/350x200"
+              class="card-img-top"
+              alt="Sample Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Three</h5>
+              <p class="card-text">They are fully responsive.</p>
+              <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-warning text-dark p-3">
+          <h5 class="card-title">Warning Card</h5>
+          <p class="card-text">This card has a yellow background.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 p-4 border">
+      <h1 class="text-primary text-center mb-4">Using Bootstrap Utilities</h1>
+      <p class="lead text-muted">
+        Utility classes make styling faster and easier.
+      </p>
+      <button class="btn btn-success mt-3 px-5 py-5">Styled Button</button>
+      <p class="text-center text-danger fw-bold">
+        This text is centered, red, and bold.
+      </p>
+    </div>
+
+    <div class="container border border-primary p-4">
+      <h1 class="text-primary">Border Example</h1>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card shadow-lg p-3 bg-light border">
+            <h5 class="card-title text-primary">Card One</h5>
+            <p class="card-text">This card has a shadow and padding.</p>
+            <a href="#" class="btn btn-outline-primary d-block mx-auto"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm bg-secondary text-white p-4 border-0">
+            <h5 class="card-title">Card Two</h5>
+            <p class="card-text">This card has a gray background.</p>
+            <a href="#" class="btn btn-outline-light">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card p-3 bg-warning border border-danger">
+            <h5 class="card-title">Card Three</h5>
+            <p class="card-text">
+              This card has a yellow background and a red border.
+            </p>
+            <a href="#" class="btn btn-dark">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center text-primary">Login Form</h2>
+      <form class="border p-4 shadow bg-light">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            id="username"
+            placeholder="Enter your username"
+          />
+          <div class="invalid-feedback">Username is required.</div>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Username" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center text-primary">User Data</h2>
+      <table class="table table-striped table-hover border">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Jane Doe</td>
+            <td>jane.doe@example.com</td>
+            <td>Admin</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>John Smith</td>
+            <td>john.smith@example.com</td>
+            <td>User</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <!-- Form -->
+      <div class="container mt-5 pt-5">
+        <h2 class="text-center text-primary">Register User</h2>
+        <form class="border p-4 shadow-sm bg-light">
+            <input type="text" class="form-control mb-3" placeholder="Full Name">
+            <input type="email" class="form-control mb-3" placeholder="Email">
+            <input type="password" class="form-control mb-3" placeholder="Password">
+            <button class="btn btn-primary w-100">Register</button>
+        </form>
+    </div>
+  </body>
+</html>
